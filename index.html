@@ -14,6 +14,7 @@
 <header class="background-one" id="home">
     <div class="home-content">
         <h1>Kristen Escobar</h1>
+        <img src="images/hamburger.png" @click="hamburger=true">
         <nav>
             <a href="#home">Home</a>
             <a href="#about">About Me</a>
@@ -24,9 +25,20 @@
             <a href="https://www.linkedin.com/in/kristenescobar97/" target="_blank"><img src="https://img.icons8.com/plasticine/60/000000/linkedin.png"></a>
         </nav>
     </div>
+
+<div class="mobile-nav" v-if="hamburger==true">
+    <img id="exit-button" @click="hamburger=false" src="https://img.icons8.com/color/48/000000/close-window.png">
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>    
+    <a href="https://www.linkedin.com/in/kristenescobar97/" target="_blank"><img src="https://img.icons8.com/plasticine/60/000000/linkedin.png"></a>
+</div>
 </header>
 
-<!-- ********************** WELCOME *********************** -->  
+<!-- ********************** WELCOME *********************** -->
 <section id="welcome">
     <h2>WELCOME</h2>
 </section>
@@ -246,6 +258,13 @@
 <!-- ************************* VUE ************************* -->
 <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 <script>
+var app = new Vue({
+    el: '#home',
+    data: {
+        hamburger: false,
+    },
+})
+    
 var app = new Vue({
     el: '#education',
     data: {

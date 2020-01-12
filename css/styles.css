@@ -88,6 +88,15 @@ h1 {
     font-size: 40px;
 }
 
+h1 ~ img {
+    width: 50px;
+    position: absolute;
+    top: 25px;
+    right: 80px;
+    padding: 5px;
+    cursor: pointer;
+}
+
 nav > a {
     padding: 0 1.5em;
     color: var(--whitemocha);
@@ -120,6 +129,40 @@ nav img {
     width: 85%;
     margin: auto;
     padding: 25px;
+}
+
+/* Mobile Nav
+------------------------------------*/
+.mobile-nav {
+    background-color: var(--raincloud);
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#exit-button{
+    float: right;
+    margin: 20px 20px 0 0;
+}
+
+.mobile-nav a{
+    display: block;
+    text-align: center;
+    margin: 15px 0 15px 0;
+    font-size: 27px;
+    letter-spacing: 2px;
+    color: var(--whitemocha);
+}
+
+.mobile-nav a:first-of-type {
+    margin-top: 30%;
+}
+
+.mobile-nav a:last-of-type {
+    margin-top: 100px;
 }
 
 /* Welcome
@@ -420,6 +463,24 @@ footer img:hover {
 .footer-content-size {
     width: 85%;
     margin: auto;
+}
+
+/* Responsive
+------------------------------------*/
+@media screen and (max-width:768px){
+    nav {
+        display: none;
+    }
+    #home {
+        position: relative;
+        top: 0;
+    }
+}
+
+@media screen and (min-width:769px){
+    h1 ~ img {
+        display: none;
+    }
 }
 
 /* Keyframes
