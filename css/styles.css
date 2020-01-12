@@ -125,7 +125,7 @@ nav img {
 /* Welcome
 ------------------------------------*/
 #welcome {
-    background-image: url(../images/portrait.jpg);
+    background-image: url('../images/portrait.jpg');
     background-size: cover;
     background-position: 50% 50%;
     height: 600px;
