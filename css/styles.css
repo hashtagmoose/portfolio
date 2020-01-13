@@ -88,15 +88,6 @@ h1 {
     font-size: 40px;
 }
 
-h1 ~ img {
-    width: 50px;
-    position: absolute;
-    top: 25px;
-    right: 80px;
-    padding: 5px;
-    cursor: pointer;
-}
-
 nav > a {
     padding: 0 1.5em;
     color: var(--whitemocha);
@@ -133,14 +124,24 @@ nav img {
 
 /* Mobile Nav
 ------------------------------------*/
+h1 ~ img {
+    width: 50px;
+    position: absolute;
+    top: 25px;
+    right: 11%;
+    padding: 5px;
+    cursor: pointer;
+    display: none;
+}
+
 .mobile-nav {
     background-color: var(--raincloud);
-    position: absolute;
+    position: fixed;
     z-index: 10;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 }
 
 #exit-button{
@@ -158,11 +159,11 @@ nav img {
 }
 
 .mobile-nav a:first-of-type {
-    margin-top: 30%;
+    margin-top: 35%;
 }
 
 .mobile-nav a:last-of-type {
-    margin-top: 100px;
+    margin-top: 70px;
 }
 
 /* Welcome
@@ -467,7 +468,7 @@ footer img:hover {
 
 /* Responsive
 ------------------------------------*/
-@media screen and (max-width:768px){
+@media screen and (max-width:900px){
     nav {
         display: none;
     }
@@ -475,11 +476,14 @@ footer img:hover {
         position: relative;
         top: 0;
     }
+    h1 ~ img {
+        display: block;
+    }
 }
 
-@media screen and (min-width:769px){
-    h1 ~ img {
-        display: none;
+@media screen and (max-width: 922px) {
+    .content-size {
+        width: 95%;
     }
 }
 
