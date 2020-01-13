@@ -130,7 +130,6 @@ h1 ~ img {
     top: 25px;
     right: 7%;
     padding: 5px;
-    cursor: pointer;
     display: none;
 }
 
@@ -153,7 +152,7 @@ h1 ~ img {
     display: block;
     text-align: center;
     margin: 15px 0 15px 0;
-    font-size: 27px;
+    font-size: 24px;
     letter-spacing: 2px;
     color: var(--whitemocha);
 }
@@ -163,7 +162,7 @@ h1 ~ img {
 }
 
 .mobile-nav a:last-of-type {
-    margin-top: 65px;
+    margin-top: 55px;
 }
 
 /* Welcome
