@@ -17,7 +17,7 @@ html {
 }
 
 *, *:before, *:after {
-    box-sizing: inherit;
+    box-sizing: inherit; /*doesn't let padding or margin change size*/
 }
 
 * {
@@ -124,6 +124,7 @@ nav img {
 
 /* Mobile Nav
 ------------------------------------*/
+/*hamburger img*/
 h1 ~ img {
     width: 50px;
     position: absolute;
@@ -143,6 +144,7 @@ h1 ~ img {
     height: 100%;
 }
 
+/**/
 #exit-button{
     float: right;
     margin: 20px 20px 0 0;
@@ -212,14 +214,22 @@ h1 ~ img {
 .experience-grid {
     display: grid;
     grid-template-columns: 1fr 3fr;
+    width: 95%;
+    margin: auto;
 }
 
 #experience {
     padding: 0 50px 0 50px;
 }
 
-#experience h4 p {
-    margin-top: 0;
+/*position titles*/
+#experience h4 {
+    margin-bottom: 0;
+}
+
+/*company & dates*/
+#experience h4 + p {
+    margin-top: 5px;
 }
 
 .divider > section {
@@ -227,20 +237,28 @@ h1 ~ img {
     padding: 25px 0 40px 0;
 }
 
+/*first experience section*/
+.divider > section:first-of-type {
+    padding-top: 10px;
+}
+
+/*last experience section*/
 .divider > section:last-of-type {
     border-bottom: none;
 }
 
+/*experience summaries & bullets*/
 .experience-grid div:last-of-type {
     padding-left: 50px;
 }
 
 .experience-grid ul {
-    width: 75%;
+    width: 95%;
     margin: auto;
     margin-left: 0;
 }
 
+/*every bullet list*/
 p ~ ul:last-of-type {
     margin-bottom: 0;
 }
@@ -249,7 +267,7 @@ p ~ ul:last-of-type {
 ------------------------------------*/
 .education-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
     grid-row-gap: 25px;
     text-align: center;
     margin-bottom: 15px;
@@ -260,10 +278,12 @@ p ~ ul:last-of-type {
     padding-left: 0;
 }
 
+/*front titles*/
 .education-grid h4 {
     padding: 125px 0;   
 }
 
+/*Related Courses*/
 .education-grid h5 {
     font-size: 1em;
     margin: 0;
@@ -284,12 +304,20 @@ p ~ ul:last-of-type {
     transform: translateY(-10px)
 } 
 
+/*turn-over arrows*/
 .education-card img {
     position: absolute;
     bottom: 8px;
     right: 12px;
     width: 3em;
     cursor: pointer;
+}
+
+.education-card-front {
+    animation: rotate-begin 1.5s ease;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform-style: preserve-3d
 }
 
 .education-card-one-back {
@@ -308,26 +336,16 @@ p ~ ul:last-of-type {
     transform-style: preserve-3d
 }
 
+/*GPA & Date*/
 .education-card-one-back p:nth-child(2) {
     font-size: 12px;
     margin: -10px 0 25fpx 0;
-}
-
-.education-card-front {
-    animation: rotate-begin 1.5s ease;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    transform-style: preserve-3d
 }
 
 /* Skills
 ------------------------------------*/
 #skills {
     padding-bottom: 90px;
-}
-
-#skills h4 {
-    color: var(--whitemocha);
 }
 
 #carousel {
@@ -376,8 +394,11 @@ p ~ ul:last-of-type {
     text-align: center;
 }
 
-.content h4 {
+/*slide titles*/
+#skills h4 {
+    color: var(--whitemocha);
     font-size: 1.2em;
+    
 }
 
 button {
@@ -403,12 +424,14 @@ button:focus {
     outline: none;
 }
 
+/*left arrow*/
 div button:first-of-type {
     position: absolute;
     left: 10px;
     top: 43%;
 }
 
+/*right arrow*/
 div button:last-of-type {
     position: absolute;
     right: 10px;
@@ -488,6 +511,9 @@ footer img:hover {
     }
     .home-content {
         padding: 25px;
+    }
+    #welcome {
+        background-position: top left;
     }
 }
 
