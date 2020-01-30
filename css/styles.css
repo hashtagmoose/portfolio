@@ -539,6 +539,10 @@ footer img:hover {
     }
 }
 
+@media screen and (max-width: 353px) {
+    body, html { overflow-x:hidden; }
+}
+
 /* Keyframes
 ------------------------------------*/
 @keyframes welcome-fade-up {
