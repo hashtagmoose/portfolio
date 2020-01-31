@@ -542,36 +542,31 @@ footer img:hover {
     #welcome {
         background-image: url('../images/mobile-welcome-background.png');
         background-size: cover;
-        background-position: 50% 50%;
-        height: 30em;
-/*        position: relative;*/
-=======
         background-position: 20% 50%;
         height: 400px;
-        position: relative;
+        position: static;
         color: var(--whitemocha);
     }
 
     #welcome h2 {
-/*
-        position: absolute;
-        top: 50%;
-        left: 50%;
-*/
-=======
-        position: absolute;
-        top: 30%;
-        left: 20%;
-        display: block;
+        position: static;
+        text-align: center;
+        width: 100%;
         font-size: 5em;
         letter-spacing: .2em;
+        margin: auto;
+        padding-top: 155px;
         animation: welcome-fade-up 1.2s ease-in;
     }
+
 }
 
 @media screen and (max-width: 353px) {
     body, html {
         overflow-x:hidden;
+    }
+    body {
+        position: relative;
     }
 }
 
