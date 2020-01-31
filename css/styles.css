@@ -172,7 +172,7 @@ h1 ~ img {
 #welcome {
     background-image: url('../images/portrait.jpg');
     background-size: cover;
-    background-position: 50% 50%;
+    background-position: 20% 50%;
     height: 600px;
     position: relative;
     color: var(--whitemocha);
@@ -239,7 +239,7 @@ h1 ~ img {
 
 /*first experience section*/
 .divider > section:first-of-type {
-    padding-top: 10px;
+    padding-top: 3px;
 }
 
 /*last experience section*/
@@ -512,9 +512,6 @@ footer img:hover {
     .home-content {
         padding: 25px;
     }
-    #welcome {
-        background-position: top left;
-    }
 }
 
 @media screen and (max-width: 800px) {
@@ -536,6 +533,28 @@ footer img:hover {
     }
     .education-card-one-back {
         padding: 20px 15px;
+    }
+}
+
+@media screen and (max-width: 714px) {
+    #welcome {
+        background-image: url('../images/mobile-welcome-background.png');
+        background-size: cover;
+        background-position: 50% 50%;
+        height: 30em;
+/*        position: relative;*/
+        color: var(--whitemocha);
+    }
+
+    #welcome h2 {
+/*
+        position: absolute;
+        top: 50%;
+        left: 50%;
+*/
+        font-size: 5em;
+        letter-spacing: .2em;
+        animation: welcome-fade-up 1.2s ease-in;
     }
 }
 
