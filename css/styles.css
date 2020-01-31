@@ -21,7 +21,8 @@ html {
 }
 
 * {
-    scrollbar-width: none;
+/*    scrollbar-width: none;*/
+    -ms-overflow-style: none;
 }
 
 ::-webkit-scrollbar {
@@ -41,6 +42,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     line-height: 1.5;
+/*    overflow: hidden;*/
 }
 
 a {
@@ -543,6 +545,10 @@ footer img:hover {
         background-position: 50% 50%;
         height: 30em;
 /*        position: relative;*/
+=======
+        background-position: 20% 50%;
+        height: 400px;
+        position: relative;
         color: var(--whitemocha);
     }
 
@@ -552,6 +558,11 @@ footer img:hover {
         top: 50%;
         left: 50%;
 */
+=======
+        position: absolute;
+        top: 30%;
+        left: 20%;
+        display: block;
         font-size: 5em;
         letter-spacing: .2em;
         animation: welcome-fade-up 1.2s ease-in;
