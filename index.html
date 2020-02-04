@@ -200,37 +200,45 @@
            
            <!--SKILL 1-->
             <div v-show="slide==1" class="slide" id="slide-one">
-                <div class="content">
-                    <h4>Front End Development</h4>
-                    <p>Experience creating responsive web designs and layouts with HTML, CSS and Vanilla Javascript, as well as utilizing Javascript frameworks such as Vue. Also have basic exposure to frameworks and preprocessors such as jQuery and SASS.</p>
+                <div class="content-box">
+                    <div class="content">
+                        <h4>Front End Development</h4>
+                        <p>Experience creating responsive web designs and layouts with HTML, CSS and Vanilla Javascript, as well as utilizing Javascript frameworks such as Vue. Also have basic exposure to frameworks and preprocessors such as jQuery and SASS.</p>
+                    </div>
                 </div>
             </div>
             
             <!--SKILL 2-->
             <div v-show="slide==2" class="slide" id="slide-two">
-                <div class="content">
-                    <h4>Content Mangement</h4>
-                    <p>Have created and updated websites using Sitecore, WordPress, Wix and Weebly. Most notably utilizing Sitecore to maintain and update the Honda Automobiles site, and WordPress to create a full&#8209;functioning e&#8209;commerce site.</p>
+                <div class="content-box">
+                    <div class="content">
+                        <h4>Content Mangement</h4>
+                        <p>Have created and updated websites using Sitecore, WordPress, Wix and Weebly. Most notably utilizing Sitecore to maintain and update the Honda Automobiles site, and WordPress to create a full&#8209;functioning e&#8209;commerce site.</p>
+                    </div>
                 </div>
             </div>
             
             <!--SKILL 3-->
             <div v-show="slide==3" class="slide" id="slide-three">
                <div class="slide-gradient" style=""></div>
-                <div class="content">
-                    <h4>ANALYTICS</h4>
-                    <p>Basic exposure and experience with SPSS statistics, Google Analytics, as well as Watson Analytics. Has also gained an understanding in forecasting, linear programming, and identifying key target markets.</p>
+                <div class="content-box">
+                    <div class="content">
+                        <h4>ANALYTICS</h4>
+                        <p>Basic exposure and experience with SPSS statistics, Google Analytics, as well as Watson Analytics. Has also gained an understanding in forecasting, linear programming, and identifying key target markets.</p>
+                    </div>
                 </div>
             </div>
             
             <!--CAROUSEL BUTTONS-->
             <button @click="change(-1)"><img class="carousel-button-one" src="images/carousel-arrow.png"></button>
             <button @click="change(1)"><img class="carousel-button-two" src="images/carousel-arrow.png"></button>
-            <ul id="dots">
-                <li @click="slide=1" :class="{active: slide==1}"></li>
-                <li @click="slide=2" :class="{active: slide==2}"></li>
-                <li @click="slide=3" :class="{active: slide==3}"></li>
-            </ul>
+            <div id="dots">
+                <ul>
+                    <li @click="slide=1" :class="{active: slide==1}"></li>
+                    <li @click="slide=2" :class="{active: slide==2}"></li>
+                    <li @click="slide=3" :class="{active: slide==3}"></li>
+                </ul>
+            </div>
         </div>
     </div>
 </section>
