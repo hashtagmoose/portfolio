@@ -210,6 +210,34 @@ h1 ~ img {
     background-color: #585858;
 }
 
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    grid-column-gap: 25px;
+}
+
+.projects-grid-item {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.projects-grid img {
+    width: 95%;
+}
+
+.projects-grid a {
+    background-color: var(--raincloud);
+    color: var(--whitemocha);
+    padding: 10px 15px 10px 15px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.projects-grid a:hover {
+    background-color: var(--rosey);
+    transition: all .25s;
+}
+
 /* Experience
 ------------------------------------*/
 .experience-grid {
@@ -354,7 +382,7 @@ p ~ ul:last-of-type {
 }
 
 #carousel {
-	background-color: #f4f4f4;
+	background-color: #585858;
     height: 500px;
     position: relative;
     margin: auto;
@@ -386,13 +414,13 @@ p ~ ul:last-of-type {
 #slide-two {
     background-image: url(../images/anete-lusina-unsplash.jpg);
     background-size: cover;
-    background-position: 15% 15%;
+    background-position: 50% 50%;
 }
 
 #slide-three {
-    background-image: url(../images/helloquence-unsplash.jpg);
+    background-image: url(../images/christin-hume-unsplash.jpg);
     background-size: cover;
-    background-position: 15% 15%;
+    background-position: 15% 35%;
 }
 
 .content-box {

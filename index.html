@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Kristen Escobar Portfolio</title>
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Montserrat:400,600,600i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Montserrat:400,400i,600,600i&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
@@ -14,7 +14,7 @@
 <header class="background-one" id="home">
     <div class="home-content">
         <h1>Kristen Escobar</h1>
-        <img src="images/hamburger.png" @click="hamburger=true">
+        <img src="images/hamburger.png" alt="Navigation accordion" @click="hamburger=true">
         <nav>
             <a href="#home">Home</a>
             <a href="#about">About Me</a>
@@ -27,14 +27,14 @@
     </div>
 
 <div class="mobile-nav" v-if="hamburger==true">
-    <img id="exit-button" @click="hamburger=false" src="https://img.icons8.com/color/48/000000/close-window.png">
+    <img id="exit-button" @click="hamburger=false" src="https://img.icons8.com/color/48/000000/close-window.png" alt="Exit navigation accordion button">
     <a href="#home" @click="hamburger=false">Home</a>
     <a href="#about" @click="hamburger=false">About Me</a>
     <a href="#projects" @click="hamburger=false">Projects</a>
     <a href="#experience" @click="hamburger=false">Experience</a>
     <a href="#education" @click="hamburger=false">Education</a>
     <a href="#skills" @click="hamburger=false">Skills</a>    
-    <a href="https://www.linkedin.com/in/kristenescobar97/" target="_blank"><img src="https://img.icons8.com/plasticine/60/000000/linkedin.png"></a>
+    <a href="https://www.linkedin.com/in/kristenescobar97/" target="_blank"><img src="https://img.icons8.com/plasticine/60/000000/linkedin.png" alt="Linkedin icon"></a>
 </div>
 </header>
 
@@ -55,6 +55,29 @@
 <section class="background-one" id="projects">
     <div class="content-size">
         <h3>FEATURED PROJECTS</h3>
+        <div class="projects-grid">
+            <div class="projects-grid-item">
+                <img src="images/Honda-Homepage.png" alt="Screenshot of the Honda Automobiles homepage">
+                <h4 style="margin-bottom: 0; letter-spacing: 1px;">Honda Automobiles</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque felis imperdiet proin fermentum leo vel orci porta. Eros donec ac odio tempor. Tellus in metus vulputate eu scelerisque felis imperdiet proin fermentum.</p>
+                <a href="https://automobiles.honda.com/" target="_blank">SEE MORE</a>
+            </div>
+            <div class="projects-grid-item">
+                <img src="images/Honda-Homepage.png" alt="Screenshot of the Honda Automobiles homepage">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque felis imperdiet proin fermentum leo vel orci porta. Eros donec ac odio tempor. Tellus in metus vulputate eu scelerisque felis imperdiet proin fermentum.</p>
+                <a href="https://automobiles.honda.com/" target="_blank">SEE MORE</a>
+            </div>
+            <div class="projects-grid-item">
+                <img src="images/Honda-Homepage.png" alt="Screenshot of the Honda Automobiles homepage">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque felis imperdiet proin fermentum leo vel orci porta. Eros donec ac odio tempor. Tellus in metus vulputate eu scelerisque felis imperdiet proin fermentum.</p>
+                <a href="https://automobiles.honda.com/" target="_blank">SEE MORE</a>
+            </div>
+            <div class="projects-grid-item">
+                <img src="images/Honda-Homepage.png" alt="Screenshot of the Honda Automobiles homepage">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque felis imperdiet proin fermentum leo vel orci porta. Eros donec ac odio tempor. Tellus in metus vulputate eu scelerisque felis imperdiet proin fermentum.</p>
+                <a href="https://automobiles.honda.com/" target="_blank">SEE MORE</a>
+            </div>
+        </div>
     </div>
 </section>
     
@@ -70,11 +93,15 @@
                 <p>Rubin Postaer &amp; Associates <br> June 2019 - Current</p>
             </div>
             <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo </p>
+                <p>
+                    Coordinate with a Digital Producer on the Honda Automobiles website Rapid Response Content team to develop and turnaround up to 15 projects per week; including sales events, copy and imagery updates, and previous year model takedowns.
+                    <br><br>
+                    <i>Key Contributions:</i>
+                </p>
                 <ul>
-                    <li>Utilization of Sitecore Content Managment to setup, organize and author Honda website copy and images</li>
-                    <li>Coordination with </li>
-                    <li>Communicated with clientele and vendors through phone and email</li>
+                    <li>Utilization of Sitecore's Content Management System to setup, organize and author Honda website copy and images</li>
+                    <li>Main content author on 5 sales event promotions, authoring and troubleshooting up to 42 website banner placements per event</li>
+                    <li>Collaboration on projects with a multifaceted team including Account, Creatives, Copywriters and Developers to meet client expectations</li>
                 </ul>
             </div>
         </section>
@@ -86,10 +113,14 @@
                 <p>PHD <br> June 2018 - August 2018</p>
             </div>
             <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo </p>
+                <p>
+                    
+                    <br><br>
+                    <i>Key Contributions:</i>
+                </p>
                 <ul>
                     <li>Oversaw the company brand on social media platforms such as Yelp</li>
-                    <li>Coordinateda with 75 cliente, maintaining company calendar invoices</li>
+                    <li>Coordinated with 75 cliente, maintaining company calendar invoices</li>
                     <li>Communicated with clientele and vendors through phone and email</li>
                 </ul>
             </div>
@@ -102,7 +133,11 @@
                 <p>Journeys <br> October 2015 - May 2018</p>
             </div>
             <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo </p>
+                <p>
+                    
+                    <br><br>
+                    <i>Key Contributions:</i>
+                </p>
                 <ul>
                     <li>Provided expertise for clients to achieve sales goals and customer satisfaction</li>
                     <li>Organized store promotions to maintain a consistent brand image</li>
@@ -118,7 +153,11 @@
                 <p>Smart &amp; Final <br> June 2017 - August 2017</p>
             </div>
             <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo </p>
+                <p>
+                    Worked directly under the Marketing and Media Senior Manager to develop and oversee campaigns, collaborating with various members of the marketing department such as Strategy, Customer Relationship Management, and Analytics.
+                    <br><br>
+                    <i>Key Contributions:</i>
+                </p>
                 <ul>
                     <li>Researched and reported on trends and competition to help drive planning and strategic analysis for upcoming seasonal campaigns</li>
                     <li>Monitored and analyzed television and radio ads for holiday campaigns and store openings through Excel Pivot Tables and nested functions</li>
@@ -140,7 +179,7 @@
                 <!--FRONT-->
                 <div class="education-card education-card-front" v-if="flip1==false">
                     <h4>CALIFORNIA STATE UNIVERSITY, FULLERTON</h4>
-                    <img @click="flip1=true" src="images/education-arrow.png">
+                    <img @click="flip1=true" src="images/education-arrow.png" alt="Circular arrow icon">
                 </div>
                 
                 <!--BACK-->
@@ -162,7 +201,7 @@
                         <li>Global Marketing</li>
                         <li>Marketing Research</li>
                     </ul>
-                    <img @click="flip1=false" src="images/education-arrow.png">
+                    <img @click="flip1=false" src="images/education-arrow.png" alt="Circular arrow icon">
                 </div>
             
             <!--EDUCATION CARD 2-->
@@ -170,7 +209,7 @@
                 <!--FRONT-->
                 <div class="education-card education-card-front" v-if="flip2==false">
                     <h4>LINKEDIN LEARNING</h4>
-                    <img @click="flip2=true" src="images/education-arrow.png">
+                    <img @click="flip2=true" src="images/education-arrow.png" alt="Circular arrow icon">
                 </div>
                 
                 <!--BACK-->
@@ -185,7 +224,7 @@
                         <li>Watson Analytics</li>
                         <li>Content Marketing Foundations</li>
                     </ul>
-                    <img @click="flip2=false" src="images/education-arrow.png">
+                    <img @click="flip2=false" src="images/education-arrow.png" alt="Circular arrow icon">
                 </div>
                 
             </div>
@@ -199,11 +238,11 @@
         <div id="carousel" data-aos="fade-up" data-aos-duration="1500">
            
            <!--SKILL 1-->
-            <div v-show="slide==1" class="slide" id="slide-one">
+            <div v-show="slide==1" class="slide" id="slide-one" title="">
                 <div class="content-box">
                     <div class="content">
                         <h4>Front End Development</h4>
-                        <p>Experience creating responsive web designs and layouts with HTML, CSS and Vanilla Javascript, as well as utilizing Javascript frameworks such as Vue. Also have basic exposure to frameworks and preprocessors such as jQuery and SASS.</p>
+                        <p>Experience creating responsive web designs and layouts with HTML, CSS and Vanilla Javascript, as well as utilizing Javascript frameworks such as Vue.</p>
                     </div>
                 </div>
             </div>
@@ -220,7 +259,6 @@
             
             <!--SKILL 3-->
             <div v-show="slide==3" class="slide" id="slide-three">
-               <div class="slide-gradient" style=""></div>
                 <div class="content-box">
                     <div class="content">
                         <h4>ANALYTICS</h4>
@@ -230,8 +268,8 @@
             </div>
             
             <!--CAROUSEL BUTTONS-->
-            <button @click="change(-1)"><img class="carousel-button-one" src="images/carousel-arrow.png"></button>
-            <button @click="change(1)"><img class="carousel-button-two" src="images/carousel-arrow.png"></button>
+            <button @click="change(-1)"><img class="carousel-button-one" src="images/carousel-arrow.png" alt="Left arrow icon"></button>
+            <button @click="change(1)"><img class="carousel-button-two" src="images/carousel-arrow.png" alt="Right arrow icon"></button>
             <div id="dots">
                 <ul>
                     <li @click="slide=1" :class="{active: slide==1}"></li>
@@ -247,16 +285,16 @@
 <footer class="footer-background">
     <div class="footer-content-size footer-content">
         <a href="mailto:kristenescobar97@yahoo.com" target="_blank">
-            <img src="https://img.icons8.com/plasticine/100/000000/important-mail.png">
+            <img src="https://img.icons8.com/plasticine/100/000000/important-mail.png" alt="Email icon">
         </a>
         <a href="https://www.linkedin.com/in/kristenescobar97/" target="_blank">
-            <img src="https://img.icons8.com/plasticine/100/000000/linkedin.png">
+            <img src="https://img.icons8.com/plasticine/100/000000/linkedin.png" alt="Linkedin icon">
         </a>
         <a href="https://www.instagram.com/kristennescobar/" target="_blank">
-            <img src="https://img.icons8.com/plasticine/100/000000/instagram.png">
+            <img src="https://img.icons8.com/plasticine/100/000000/instagram.png" alt="Instagram icon">
         </a>
         <a href="https://www.pinterest.com/kristenescobar9/" target="_blank">
-            <img src="https://img.icons8.com/plasticine/100/000000/pinterest.png">
+            <img src="https://img.icons8.com/plasticine/100/000000/pinterest.png" alt="Pinterest icon">
         </a>
         <p>&copy;2020 by Kristen Escobar.</p>
     </div>
