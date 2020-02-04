@@ -531,18 +531,6 @@ footer img:hover {
         width: 75%;
     }
 }
-@media screen and (max-width: 900px){
-    nav {
-        display: none;
-    }
-    #home {
-        position: relative;
-        top: 0;
-    }
-    h1 ~ img {
-        display: block;
-    }
-}
 
 @media screen and (max-width: 922px) {
     .content-size, .home-content {
@@ -557,6 +545,19 @@ footer img:hover {
     }
     h3 {
         padding-top: 30px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    nav {
+        display: none;
+    }
+    #home {
+        position: relative;
+        top: 0;
+    }
+    h1 ~ img {
+        display: block;
     }
 }
 
