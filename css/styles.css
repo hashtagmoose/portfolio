@@ -671,6 +671,9 @@ footer img:hover {
     body {
         position: relative;
     }
+    h3 {
+        font-size: 2.8em;
+    }
 }
 
 /* Keyframes
