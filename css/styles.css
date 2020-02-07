@@ -243,11 +243,13 @@ h1 ~ img {
     padding: 10px 15px 10px 15px;
     display: inline-block;
     border-radius: 5px;
+    transition: all .6s ease;
 }
 
 .projects-grid a:hover {
     background-color: var(--rosey);
-    transition: all .25s;
+    transition: all .6s ease;
+    padding: 10px 20px 10px 20px;
 }
 
 /* Experience
@@ -638,6 +640,12 @@ footer img:hover {
         left: 50%;
         transform: translate(-50%, -50%);
     }
+    .projects-grid-item {
+        width: 85%
+    }
+    .projects-grid {
+        justify-items: center;
+    }
     .slide {
         width: 100%;
         height: 50%;
@@ -652,6 +660,7 @@ footer img:hover {
         width: 100%;
         height: 100%;
         top: 100%;
+        animation: none;
     }
     #dots {
         display: none;
