@@ -173,7 +173,8 @@ h1 ~ img {
 #welcome {
     background-image: url('../images/portrait.jpg');
     background-size: cover;
-    background-position: 20% 50%;
+    background-position: 20% 20%;
+    background-attachment: fixed;
     height: 600px;
     position: relative;
     color: var(--whitemocha);
