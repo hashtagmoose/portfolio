@@ -21,7 +21,6 @@ html {
 }
 
 * {
-/*    scrollbar-width: none;*/
     -ms-overflow-style: none;
 }
 
@@ -42,7 +41,6 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     line-height: 1.5;
-/*    overflow: hidden;*/
 }
 
 a {
@@ -86,7 +84,7 @@ h1 {
     border-bottom: 1px solid var(--rosey);
     padding-bottom: .45em;
     color: var(--whitemocha);
-    margin: -10px 0 15px 0;
+    margin: -10px 0 18px 0;
     font-size: 40px;
 }
 
@@ -121,7 +119,7 @@ nav img {
 .home-content {
     width: 85%;
     margin: auto;
-    padding: 25px;
+    padding: 25px 25px 20px;
 }
 
 /* Mobile Nav
@@ -421,19 +419,19 @@ p ~ ul:last-of-type {
 }
 
 #slide-one {
-    background-image: url(../images/safar-safarov-unsplash.jpg);
+    background-image: url(../images/christin-hume-unsplash.jpg);
     background-size: cover;
     background-position: 15% 15%;
 }
 
 #slide-two {
-    background-image: url(../images/anete-lusina-unsplash.jpg);
+    background-image: url(../images/safar-safarov-unsplash.jpg);
     background-size: cover;
     background-position: 50% 50%;
 }
 
 #slide-three {
-    background-image: url(../images/christin-hume-unsplash.jpg);
+    background-image: url(../images/anete-lusina-unsplash.jpg);
     background-size: cover;
     background-position: 15% 35%;
 }
