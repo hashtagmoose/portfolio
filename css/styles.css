@@ -630,7 +630,7 @@ footer img:hover {
 
 @media screen and (max-width: 714px) {
     #welcome {
-        background-image: url('../images/mobile-welcome-background.png');
+        background-image: url('../images/portrait_mobile.jpg');
         background-size: cover;
         background-position: 20% 50%;
         height: 400px;
