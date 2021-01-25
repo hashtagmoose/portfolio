@@ -16,6 +16,10 @@ html {
     scroll-behavior: smooth;
 }
 
+[v-cloak] {
+    display: none;
+}
+
 *, *:before, *:after {
     box-sizing: inherit; /*doesn't let padding or margin change size*/
 }

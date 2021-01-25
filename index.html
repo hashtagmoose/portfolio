@@ -27,7 +27,7 @@
         </nav>
     </div>
 
-<div class="mobile-nav" v-if="hamburger==true">
+<div class="mobile-nav" v-if="hamburger==true" v-cloak>
     <img id="exit-button" @click="hamburger=false" src="https://img.icons8.com/color/48/000000/close-window.png" alt="Exit navigation accordion button">
     <a href="#home" @click="hamburger=false">Home</a>
     <a href="#about" @click="hamburger=false">About Me</a>
